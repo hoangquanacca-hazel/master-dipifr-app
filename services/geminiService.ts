@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { UserContext } from "../types";
 
 // API Key is now safely injected via vite.config.ts
-const apiKey = process.env.API_KEY;
+const apiKey = import.meta.env.API_KEY;
 
 // Initialize AI instance (handle missing key gracefully to prevent crash on load)
 const ai = new GoogleGenAI({ apiKey: apiKey || 'missing-key' });
