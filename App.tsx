@@ -15,11 +15,11 @@ import { ViewState, Language, User } from './types';
 import { Study } from './components/Study';
 import { Dashboard } from './components/Dashboard';
 import { MockExam } from './components/MockExam';
-import { Bot } from './components/bot';
+import { Bot } from './components/bot'; // Đã sửa tên bot thường
 import { AuthScreen } from './components/Auth';
 import { AdminDashboard } from './components/Admin';
 import { Practice } from './components/Practice';
-import { ExamTechnique } from './components/examTechnique';
+import { ExamTechnique } from './components/ExamTechnique'; // Sửa lại chữ E hoa cho chắc (vì thường file tên là ExamTechnique.tsx)
 import { authService } from './services/authService';
 
 const IDLE_TIMEOUT = 15 * 60 * 1000; // 15 minutes idle
@@ -334,3 +334,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+// Update fix Vercel deploy
